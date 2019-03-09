@@ -1,0 +1,50 @@
+{
+  "name": "almeidafranci/laravel-obrsimulada",
+  "description": "A Laravel wrapper for OBR Simulada",
+  "keywords": [
+    "laravel",
+    "obr simulada"
+  ],
+  "homepage": "https://github.com/almeidafranci/laravel-obrsimulada",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Francinaldo Almeida",
+      "email": "almeidafranci@users.noreply.github.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "laravel/framework": "~5.7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Almeidafranci\\ObrSimulada\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Almeidafranci\\ObrSimulada\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Almeidafranci\\ObrSimulada\\ObrSimuladaServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
